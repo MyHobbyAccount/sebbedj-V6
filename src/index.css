@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.section-height {
+  min-height: auto;
+  padding: 4rem 0;
+}
+
+/* Hero section should still be full height */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Subtle header glow */
+.section-header {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(188, 19, 254, 0.3);
+  position: relative;
+}
+
+.section-header::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #bc13fe, transparent);
+}
+
+/* Neon box effect */
+.neon-box {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(188, 19, 254, 0.3);
+  box-shadow: 0 0 20px rgba(188, 19, 254, 0.2);
+  transition: all 0.3s ease;
+}
+
+.neon-box:hover {
+  box-shadow: 0 0 30px rgba(188, 19, 254, 0.4);
+}
+
+/* Glow image effect */
+.glow-image {
+  background: radial-gradient(circle at center, rgba(188, 19, 254, 0.2), transparent 70%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+/* Animated background */
+.animated-bg {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.95));
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(188, 19, 254, 0.1), transparent 60%);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.8; }
+}
+
+/* Glass morphism */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Service cards */
+.service-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(188, 19, 254, 0.3);
+}
+
+/* Animated buttons */
+.glow-button {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(45deg, #ff0080, #7928ca);
+  transition: all 0.3s ease;
+}
+
+.glow-button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 60%);
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.glow-button:hover::before {
+  transform: rotate(45deg) translate(50%, 50%);
+}
+
+/* Testimonial styles */
+.testimonial-card {
+  transition: all 0.3s ease;
+}
+
+/* Venue tags animation */
+.venue-tag {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Modal styles */
+.modal-open {
+  overflow: hidden;
+}
+
+/* Ensure modals are always on top */
+.modal-overlay {
+  z-index: 1000;
+}
