@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaMapMarkerAlt } from 'react-icons/fa';
+import React from "react";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 const Venues = () => {
   const venues = [
@@ -21,7 +21,7 @@ const Venues = () => {
     "Varbergs Fästning",
     "Råda Säteri",
     "O´learys",
-    "Många fler..."
+    "Många fler...",
   ];
 
   return (

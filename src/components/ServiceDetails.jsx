@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Transition } from '@headlessui/react';
+import React, { useState, useRef, useEffect } from "react";
+import { Transition } from "@headlessui/react";
 
 const ServiceDetails = ({ service }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,11 +13,11 @@ const ServiceDetails = ({ service }) => {
     };
 
     if (isOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isOpen]);
 
@@ -29,7 +29,7 @@ const ServiceDetails = ({ service }) => {
       >
         Mer Information
       </button>
-      
+
       <Transition
         show={isOpen}
         enter="transition-opacity duration-300"
@@ -39,14 +39,11 @@ const ServiceDetails = ({ service }) => {
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
       >
-        <div 
-          className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
-        >
-          <div 
-            ref={modalRef}
-            className="glass p-6 rounded-lg max-w-md w-full"
-          >
-            <h3 className="text-2xl font-semibold mb-4 text-white">{service.title}</h3>
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+          <div ref={modalRef} className="glass p-6 rounded-lg max-w-md w-full">
+            <h3 className="text-2xl font-semibold mb-4 text-white">
+              {service.title}
+            </h3>
             <p className="text-gray-200 mb-6">{service.details}</p>
             <button
               onClick={() => setIsOpen(false)}

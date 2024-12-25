@@ -1,6 +1,6 @@
-import React from 'react';
-import { Transition } from '@headlessui/react';
-import { sendEmail } from '../utils/email';
+import React from "react";
+import { Transition } from "@headlessui/react";
+import { sendEmail } from "../utils/email";
 
 const ContactPopup = ({ isOpen, onClose, service }) => {
   const handleSubmit = async (e) => {
@@ -9,16 +9,18 @@ const ContactPopup = ({ isOpen, onClose, service }) => {
       name: e.target.name.value,
       email: e.target.email.value,
       message: e.target.message.value,
-      service: service?.title || 'DJ-tjänster'
+      service: service?.title || "DJ-tjänster",
     };
 
     const result = await sendEmail(formData);
     if (result.success) {
-      alert('Tack för din bokning! Vi återkommer så snart som möjligt.');
+      alert("Tack för din bokning! Vi återkommer så snart som möjligt.");
       e.target.reset();
       onClose();
     } else {
-      alert('Ett fel uppstod. Vänligen försök igen eller kontakta oss direkt via telefon.');
+      alert(
+        "Ett fel uppstod. Vänligen försök igen eller kontakta oss direkt via telefon."
+      );
     }
   };
 
@@ -32,20 +34,25 @@ const ContactPopup = ({ isOpen, onClose, service }) => {
       leaveFrom="opacity-100"
       leaveTo="opacity-0"
     >
-      <div 
+      <div
         className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
         onClick={onClose}
       >
-        <div 
+        <div
           className="bg-black p-6 rounded-lg max-w-md w-full text-white"
-          onClick={e => e.stopPropagation()}
+          onClick={(e) => e.stopPropagation()}
         >
           <h3 className="text-2xl font-semibold mb-4">
-            Boka {service?.title || 'DJ-tjänster'}
+            Boka {service?.title || "DJ-tjänster"}
           </h3>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label htmlFor="popup-name" className="block text-sm font-medium text-white">Namn</label>
+              <label
+                htmlFor="popup-name"
+                className="block text-sm font-medium text-white"
+              >
+                Namn
+              </label>
               <input
                 type="text"
                 id="popup-name"
@@ -56,7 +63,12 @@ const ContactPopup = ({ isOpen, onClose, service }) => {
               />
             </div>
             <div>
-              <label htmlFor="popup-email" className="block text-sm font-medium text-white">Email</label>
+              <label
+                htmlFor="popup-email"
+                className="block text-sm font-medium text-white"
+              >
+                Email
+              </label>
               <input
                 type="email"
                 id="popup-email"
@@ -67,7 +79,12 @@ const ContactPopup = ({ isOpen, onClose, service }) => {
               />
             </div>
             <div>
-              <label htmlFor="popup-message" className="block text-sm font-medium text-white">Meddelande</label>
+              <label
+                htmlFor="popup-message"
+                className="block text-sm font-medium text-white"
+              >
+                Meddelande
+              </label>
               <textarea
                 required
                 rows={4}

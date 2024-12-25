@@ -1,12 +1,15 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
-import TestimonialGrid from './TestimonialGrid';
-import { testimonialsData } from '../../data/testimonialsData';
-import { PAGE_META } from '../../config/seo';
+import React from "react";
+import { Helmet } from "react-helmet-async";
+import TestimonialGrid from "./TestimonialGrid";
+import { testimonialsData } from "../../data/testimonialsData";
+import { PAGE_META } from "../../config/seo";
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="section-height bg-gradient-dark py-20">
+    <section
+      id="testimonials"
+      className="section-height bg-gradient-dark py-20"
+    >
       <Helmet>
         <title>{PAGE_META.testimonials.title}</title>
         <meta name="description" content={PAGE_META.testimonials.description} />

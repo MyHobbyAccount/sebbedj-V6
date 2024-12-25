@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { FaPlay, FaMusic } from 'react-icons/fa';
+import React from "react";
+import { motion } from "framer-motion";
+import { FaPlay, FaMusic } from "react-icons/fa";
 
 const Hero = () => {
   const containerVariants = {
@@ -8,9 +8,9 @@ const Hero = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3
-      }
-    }
+        staggerChildren: 0.3,
+      },
+    },
   };
 
   const itemVariants = {
@@ -18,8 +18,8 @@ const Hero = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6 }
-    }
+      transition: { duration: 0.6 },
+    },
   };
 
   const iconVariants = {
@@ -27,12 +27,12 @@ const Hero = () => {
     visible: {
       scale: 1,
       rotate: 0,
-      transition: { 
+      transition: {
         type: "spring",
         stiffness: 260,
-        damping: 20
-      }
-    }
+        damping: 20,
+      },
+    },
   };
 
   const glowVariants = {
@@ -42,9 +42,9 @@ const Hero = () => {
       transition: {
         duration: 2,
         repeat: Infinity,
-        ease: "easeInOut"
-      }
-    }
+        ease: "easeInOut",
+      },
+    },
   };
 
   return (
@@ -60,7 +60,7 @@ const Hero = () => {
           transition={{
             duration: 4,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
         />
         <motion.div
@@ -72,13 +72,13 @@ const Hero = () => {
           transition={{
             duration: 4,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
         />
       </div>
 
       <div className="container mx-auto px-4 py-16 relative z-10">
-        <motion.div 
+        <motion.div
           className="text-center"
           variants={containerVariants}
           initial="hidden"
@@ -103,7 +103,7 @@ const Hero = () => {
           </motion.div>
 
           {/* Main Title */}
-          <motion.h1 
+          <motion.h1
             className="text-6xl md:text-7xl font-bold mb-6 text-white font-display"
             variants={itemVariants}
           >
@@ -111,7 +111,7 @@ const Hero = () => {
           </motion.h1>
 
           {/* Subtitle */}
-          <motion.p 
+          <motion.p
             className="text-xl md:text-2xl mb-8 text-gray-300"
             variants={itemVariants}
           >
@@ -119,7 +119,7 @@ const Hero = () => {
           </motion.p>
 
           {/* Description */}
-          <motion.p 
+          <motion.p
             className="text-lg mb-12 text-gray-400 max-w-2xl mx-auto"
             variants={itemVariants}
           >
@@ -131,7 +131,7 @@ const Hero = () => {
             variants={itemVariants}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => document.getElementById('contact').scrollIntoView()}
+            onClick={() => document.getElementById("contact").scrollIntoView()}
             className="bg-gradient-to-r from-neon-pink to-neon-purple text-white px-8 py-4 rounded-lg hover:shadow-neon transition-all duration-300 group flex items-center mx-auto space-x-2"
           >
             <FaMusic className="text-xl group-hover:rotate-12 transition-transform" />

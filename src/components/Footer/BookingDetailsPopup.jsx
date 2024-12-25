@@ -1,8 +1,8 @@
-import React from 'react';
-import { createPortal } from 'react-dom';
-import { Transition } from '@headlessui/react';
-import { IoClose } from 'react-icons/io5';
-import BookingTerms from './BookingTerms';
+import React from "react";
+import { createPortal } from "react-dom";
+import { Transition } from "@headlessui/react";
+import { IoClose } from "react-icons/io5";
+import BookingTerms from "./BookingTerms";
 
 const BookingDetailsPopup = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
@@ -17,7 +17,7 @@ const BookingDetailsPopup = ({ isOpen, onClose }) => {
       leaveFrom="opacity-100"
       leaveTo="opacity-0"
     >
-      <div 
+      <div
         className="fixed inset-0 bg-black bg-opacity-75 z-[100] overflow-y-auto"
         onClick={onClose}
       >
@@ -29,14 +29,14 @@ const BookingDetailsPopup = ({ isOpen, onClose }) => {
           >
             &#8203;
           </span>
-          
+
           <div
             className="inline-block w-full max-w-2xl p-6 my-8 text-left align-middle glass rounded-lg shadow-xl transform transition-all"
-            onClick={e => e.stopPropagation()}
+            onClick={(e) => e.stopPropagation()}
           >
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-2xl font-semibold text-white">
-                Bokningsvillkor
+                Bokningsvillkor 2025-01
               </h2>
               <button
                 onClick={onClose}
@@ -47,7 +47,7 @@ const BookingDetailsPopup = ({ isOpen, onClose }) => {
             </div>
 
             <BookingTerms />
-            
+
             <div className="mt-8 text-center">
               <button
                 onClick={onClose}

@@ -16,6 +16,9 @@ const AboutText = () => {
         "underhållning",
         "bröllop DJ",
         "event DJ",
+        "sebbedj",
+        "DJ sebbe",
+        "sebbe dj",
       ],
     },
     {
