@@ -10,19 +10,19 @@ export const sendEmail = async (formData) => {
       throw new Error('Email configuration is missing');
     }
 
-    const emailData = {
+    const templateParams = {
+      to_name: 'sebbedj',
       from_name: formData.name,
       from_email: formData.email,
       message: formData.message,
-      service: formData.service || 'General Inquiry',
-      to_email: 'boka@sebbedj.se',
+      service_type: formData.service || 'General Inquiry',
       reply_to: formData.email
     };
 
     const response = await emailjs.send(
       serviceId,
       templateId,
-      emailData,
+      templateParams,
       publicKey
     );
 
