@@ -14,12 +14,12 @@ const ContactPopup = ({ isOpen, onClose, service }) => {
 
     const result = await sendEmail(formData);
     if (result.success) {
-      alert("Tack för din bokning! Vi återkommer så snart som möjligt.");
+      alert("Tack för din förfrågan! Vi återkommer så snart som möjligt.");
       e.target.reset();
       onClose();
     } else {
       alert(
-        "Ett fel uppstod. Vänligen försök igen eller kontakta oss direkt via telefon."
+        "Ett fel uppstod. Vänligen försök igen eller kontakta oss direkt via telefon på 072-1571439"
       );
     }
   };
