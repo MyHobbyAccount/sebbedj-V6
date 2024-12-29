@@ -17,7 +17,7 @@ Tech Stack
 - Frontend: React.js
 - Styling: CSS
 
-AI Tooll
+AI Tools
 
 - Bolt.new
 - Github Copilot
