@@ -12,7 +12,7 @@ export const faqData = [
   {
     question: "Kan jag önska låtar i förväg?",
     answer:
-      "Absolut! För bröllop har vi ett planeringsmöte där vi går igenom alla era önskemål. För andra event kan ni skicka en spellista i förväg. Under eventet tar jag såklart också emot önskningar från gästerna.",
+      "Absolut! För bröllop har vi ett planeringsmöte där vi går igenom alla era önskemål såsom låtlista om det är låtar som är viktiga för Er. Som DJ utgår jag från dansgolvets behov, så det är naturligt och självklart för mig att man kan önska låtar även under kvällen, på alla event där jag uppträder.",
   },
   {
     question: "Hur lång tid spelar du?",
@@ -22,7 +22,7 @@ export const faqData = [
   {
     question: "Vilken typ av musik spelar du?",
     answer:
-      "Jag anpassar musiken efter evenemanget och publiken. Min repertoar sträcker sig från klassiska hits till dagens populärmusik, och jag är erfaren i att läsa av dansgolvet för att skapa rätt stämning vid rätt tillfälle. En bra fest har en mix mellan fartfyllda bangers och låtar man kan sjunga med till.",
+      "Jag anpassar musiken efter evenemanget och publiken. Min repertoar sträcker sig från klassiska hits till dagens populärmusik, och jag är erfaren i att läsa av dansgolvet för att skapa rätt stämning vid rätt tillfälle. Ett lyckat event enligt mig har en mix mellan fartfyllda bangers och låtar man kan sjunga med till. Hög igenkänningsfaktor och det där lilla extra som bara en party-DJ kan skapa. 🎉🤩",
   },
   {
     question: "Varför kostar det så mycket att anlita en bröllops DJ",
