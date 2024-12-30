@@ -60,7 +60,7 @@ const Services = () => {
                 <p className="text-xl mb-6 text-neon-pink font-display">
                   {service.price}
                 </p>
-                <p className="flex mb-6 items-center text-gray-300">
+                <p className="flex mb-6 items-center text-gray-300 italic underline">
                   {service.term}
                 </p>
                 <p className="text-xl mb-1 text-white font-display">

@@ -29,7 +29,7 @@ export const servicesData = [
       "1 timma konsultationsmöte",
     ],
     details:
-      "Denna tjänst är idealiskt för evenemang där middag och fest hålls i samma lokal. DJ:n anländer i god tid innan gästerna för att förbereda och säkerställa att allt är redo när festen börjar. Speltiden kan anpassas om ni vill ha mingel-DJ, musik och tillgänglighet under bröllopsmiddagen - Mot offert. Se bokningsvillkor för mer detaljer eller kontakta mig för att boka! ✨",
+      "Denna tjänst är idealiskt för evenemang där middag och fest hålls i samma lokal. DJ:n anländer i god tid innan gästerna för att förbereda och säkerställa att allt är redo när festen börjar. Speltiden kan anpassas om ni vill ha mingel-DJ, musik och tillgänglighet under bröllopsmiddagen - Mot offert. Se bokningsvillkor för mer detaljer eller kontakta mig för en offert som är anpassat för ert bröllop! ✨",
   },
   {
     title: "Företagsevent",
