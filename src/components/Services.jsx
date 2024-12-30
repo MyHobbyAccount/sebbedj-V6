@@ -60,6 +60,12 @@ const Services = () => {
                 <p className="text-xl mb-6 text-neon-pink font-display">
                   {service.price}
                 </p>
+                <p className="flex mb-6 items-center text-gray-300">
+                  {service.term}
+                </p>
+                <p className="text-xl mb-1 text-white font-display">
+                  {service.content}
+                </p>
                 <ul className="mb-6 space-y-3">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center text-gray-300">

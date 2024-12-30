@@ -2,8 +2,9 @@ export const servicesData = [
   {
     title: "Bröllops DJ - Paket",
     price: "10,000 SEK inkl moms",
+    content: "Paketet inkluderar:",
+    term: "Gäller vid separat danslokal (skild från middag)",
     features: [
-      "Separat danslokal (skild från middag)",
       "DJ enbart under bröllopsfesten",
       "Anpassat för upp till 120 personer",
       "Ljudsystem i världsklass (Yamaha)",
@@ -17,9 +18,10 @@ export const servicesData = [
   {
     title: "Bröllops DJ",
     price: "Från 13,000 SEK inkl moms",
+    content: "Priset inkluderar:",
+    term: "Gäller vid samma lokal för middag och fest",
     features: [
-      "Bröllopsfesten är i samma lokal som middagen",
-      "DJ under bröllopsfesten ingår i priset",
+      "DJ under bröllopsfesten",
       "Anpassat för upp till 120 personer",
       "Ljudsystem i världsklass (Yamaha)",
       "Disco kula & effektbelysning",
@@ -32,8 +34,9 @@ export const servicesData = [
   {
     title: "Företagsevent",
     price: "Från 10,000 SEK exkl moms",
+    content: "Priset inkluderar:",
     features: [
-      "DJ till huvudeventet ingår",
+      "DJ till huvudeventet",
       "Anpassat för upp till 120 personer",
       "Ljudsystem i världsklass (Yamaha)",
       "Disco kula & effektbelysning",
@@ -48,6 +51,7 @@ export const servicesData = [
   {
     title: "Enbart DJ - Nattklubb",
     price: "Från 4000 SEK exkl moms",
+    content: "Priset inkluderar:",
     features: [
       "Professionell DJ-uppträdande",
       "Expert på att läsa av publiken",
@@ -61,6 +65,7 @@ export const servicesData = [
   {
     title: "Musikquiz",
     price: "Från 5,000 SEK inkl moms",
+    content: "Priset inkluderar:",
     features: [
       "1 timma interaktivt musikquiz",
       "Högtalare för 50-tal personer samt mikrofon ingår.",
@@ -73,8 +78,9 @@ export const servicesData = [
   {
     title: "Privatfest",
     price: "Från 10,000 SEK inkl moms",
+    content: "Priset inkluderar:",
     features: [
-      "DJ till huvudeventet ingår i priset",
+      "DJ till huvudeventet",
       "Anpassat för upp till 120 personer",
       "Ljudsystem i världsklass (Yamaha)",
       "Disco kula & effektbelysning",
