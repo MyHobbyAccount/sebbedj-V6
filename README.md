@@ -28,3 +28,4 @@ Planned Enhancements
 - Refine the SEO structure with metadata and dynamic tags.
 - Explore integrating analytics tools for tracking user interaction.
 - Explore animations and layered backgrounds for the different sections of content.
+- Connect via FTP to file manager for direct updates.
